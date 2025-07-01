@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Me{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-detail-content">
+                        <h4>Email</h4>
+                        <p>routhu.sandeep793@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-detail-content">
+                        <h4>Phone</h4>
+                        <p>+91 8179097008</p>
+                    </div>
+                </div>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-detail-content">
+                        <h4>Location</h4>
+                        <p>45-3-11/1, New Shankar Nagar<br>Ramachandrapuram (BHEL Township)<br>Telangana 502032, India</p>
+                    </div>
+                </div>
+                
+                <div class="social-links-contact">
+                    <a href="https://linkedin.com/in/sandeep-routhu" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:routhu.sandeep793@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+918179097008"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
