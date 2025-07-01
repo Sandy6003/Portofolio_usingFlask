@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-content">
+        <h1>Sandeep Routhu</h1>
+        <h2>Electronics & Communication Engineer</h2>
+        <p>Python Developer | Full-Stack Enthusiast | Problem Solver</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('about') }}" class="btn">About Me</a>
+            <a href="{{ url_for('projects') }}" class="btn btn-outline">View Projects</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
