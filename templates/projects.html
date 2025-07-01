@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}My Projects{% endblock %}
+
+{% block content %}
+<section class="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">ATM Simulator</h3>
+                    <p class="project-description">A functional ATM simulator developed in Python using procedural programming techniques.</p>
+                    <div class="project-details">
+                        <ul>
+                            <li>Implemented core functionalities including account deposit, withdrawal, and balance inquiry</li>
+                            <li>Leveraged modules for enhanced code organization and maintainability</li>
+                            <li>Robust exception handling for invalid inputs and errors</li>
+                            <li>Handled scenarios like insufficient funds and invalid account numbers</li>
+                        </ul>
+                    </div>
+                    <div class="tech-used">
+                        <span>Python</span>
+                        <span>Exception Handling</span>
+                        <span>Modular Programming</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Intelligent Link Switching for Hybrid FSO/RF</h3>
+                    <p class="project-description">An intelligent system for dynamically switching between communication links based on real-time conditions.</p>
+                    <div class="project-details">
+                        <ul>
+                            <li>Created a system for switching between Free Space Optics (FSO) and Radio Frequency (RF)</li>
+                            <li>Monitored link quality, weather conditions, and network traffic</li>
+                            <li>Implemented decision-making algorithms for optimal link selection</li>
+                            <li>Improved communication reliability in varying environmental conditions</li>
+                        </ul>
+                    </div>
+                    <div class="tech-used">
+                        <span>Communication Systems</span>
+                        <span>Signal Processing</span>
+                        <span>Real-time Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="certifications">
+            <h3><i class="fas fa-certificate"></i> Certifications</h3>
+            <div class="certificate-list">
+                <div class="certificate-item">
+                    <h4 class="certificate-title"><i class="fab fa-hackerrank"></i> HackerRank Python Certification</h4>
+                    <p>Verified certificate of Python programming proficiency</p>
+                    <a href="https://www.hackerrank.com/certificates/al53bo271" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+                
+                <div class="certificate-item">
+                    <h4 class="certificate-title"><i class="fab fa-hackerrank"></i> HackerRank SQL Certification</h4>
+                    <p>Verified certificate of SQL skills and database knowledge</p>
+                    <a href="https://www.hackerrank.com/certificates/al53bo271" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
